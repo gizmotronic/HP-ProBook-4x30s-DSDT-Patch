@@ -139,6 +139,11 @@ case "$1" in
         cp $BUILDDIR/SSDT-8x70.aml $EFIDIR/EFI/CLOVER/ACPI/patched
         ls $EFIDIR/EFI/CLOVER/ACPI/patched
     ;;
+    install_8x70w)
+        $0 inst_hires $2
+        cp $BUILDDIR/SSDT-8x70w.aml $EFIDIR/EFI/CLOVER/ACPI/patched
+        ls $EFIDIR/EFI/CLOVER/ACPI/patched
+    ;;
     install_9x70)
         $0 inst_lores $2
         cp $BUILDDIR/SSDT-9x70.aml $EFIDIR/EFI/CLOVER/ACPI/patched
