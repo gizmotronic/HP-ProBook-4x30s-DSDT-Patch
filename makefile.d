@@ -66,6 +66,8 @@ build/SSDT-8x60.aml : hotpatch/SSDT-8x60.dsl hotpatch/SSDT-RMCF.asl hotpatch/SSD
 
 build/SSDT-8x70.aml : hotpatch/SSDT-8x70.dsl hotpatch/SSDT-RMCF.asl hotpatch/SSDT-PEGP_DGFX_RDSS.asl hotpatch/SSDT-HACK.asl hotpatch/include/IDT_7605_HDEF.asl hotpatch/include/standard_PS2K.asl hotpatch/include/standard_PS2K_data.asl hotpatch/SSDT-KEY87.asl hotpatch/SSDT-USB-8x70.asl hotpatch/SSDT-EH01.asl hotpatch/SSDT-EH02.asl hotpatch/SSDT-XHC.asl hotpatch/SSDT-BATT.asl
 
+build/SSDT-8x70w.aml : hotpatch/SSDT-8x70w.dsl hotpatch/SSDT-RMCF.asl hotpatch/SSDT-HACK.asl hotpatch/SSDT-PEGP_GFX0_RDSS.asl hotpatch/include/standard_PS2K.asl hotpatch/include/standard_PS2K_data.asl hotpatch/SSDT-KEY87.asl hotpatch/SSDT-USB-8x70.asl hotpatch/SSDT-EH01.asl hotpatch/SSDT-EH02.asl hotpatch/SSDT-XHC.asl hotpatch/SSDT-BATT.asl hotpatch/SSDT-USBX.asl
+
 build/SSDT-9x70.aml : hotpatch/SSDT-9x70.dsl hotpatch/SSDT-RMCF.asl hotpatch/SSDT-PEGP_DGFX_RDSS.asl hotpatch/SSDT-HACK.asl hotpatch/include/IDT_76e0_HDEF.asl hotpatch/include/standard_PS2K.asl hotpatch/include/standard_PS2K_data.asl hotpatch/SSDT-KEY87.asl hotpatch/SSDT-USB-9x70.asl hotpatch/SSDT-EH01.asl hotpatch/SSDT-EH02.asl hotpatch/SSDT-XHC.asl hotpatch/SSDT-BATT.asl
 
 build/SSDT-9x80.aml : hotpatch/SSDT-9x80.dsl hotpatch/SSDT-RMCF.asl hotpatch/SSDT-RP05_DGFX_RDSS.asl hotpatch/SSDT-HACK.asl hotpatch/include/ALC280_HDEF.asl hotpatch/include/ALC280_HDAU.asl hotpatch/include/standard_PS2K.asl hotpatch/include/standard_PS2K_data.asl hotpatch/SSDT-KEY87.asl hotpatch/SSDT-USB-9x80.asl hotpatch/SSDT-XHC.asl hotpatch/SSDT-BATT.asl hotpatch/include/disable_EH01.asl

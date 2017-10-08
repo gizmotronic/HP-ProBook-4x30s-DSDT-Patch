@@ -42,6 +42,12 @@ case "$1" in
         cp $BUILDDIR/SSDT-IGPUH.aml "$EFI"/EFI/CLOVER/ACPI/patched
         cp $BUILDDIR/SSDT-FAN$FANPREF.aml "$EFI"/EFI/CLOVER/ACPI/patched
     ;;
+    inst_dgfx)
+        rm -f "$EFI"/EFI/CLOVER/ACPI/patched/DSDT.aml
+        rm -f "$EFI"/EFI/CLOVER/ACPI/patched/SSDT-*.aml
+        #cp $CORE "$EFI"/EFI/CLOVER/ACPI/patched
+        cp $BUILDDIR/SSDT-FAN$FANPREF.aml "$EFI"/EFI/CLOVER/ACPI/patched
+    ;;
     inst_xcpm)
         $0 inst_lores $2
         # Haswell/Broadwell/Skylake/KabyLake all use XCPM only for CPU PM
@@ -137,6 +143,11 @@ case "$1" in
     install_8x70_hires)
         $0 inst_hires $2
         cp $BUILDDIR/SSDT-8x70.aml "$EFI"/EFI/CLOVER/ACPI/patched
+        ls "$EFI"/EFI/CLOVER/ACPI/patched
+    ;;
+    install_8x70w)
+        $0 inst_dgfx $2
+        cp $BUILDDIR/SSDT-8x70w.aml "$EFI"/EFI/CLOVER/ACPI/patched
         ls "$EFI"/EFI/CLOVER/ACPI/patched
     ;;
     install_9x70)

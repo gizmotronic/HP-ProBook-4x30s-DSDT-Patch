@@ -74,6 +74,15 @@ printf "\n"
 printf "!! creating config/config_8x70p.plist\n"
 cp config/config_6x70p.plist config/config_8x70p.plist
 printf "\n"
+printf "!! creating config/config_8x70w.plist\n"
+cp config_parts/config_master.plist config/config_8x70w.plist
+/usr/libexec/PlistBuddy -c "Set ACPI:DSDT:Patches:5:Comment change DGFX to GFX0" config/config_8x70w.plist
+/usr/libexec/PlistBuddy -c "Set ACPI:DSDT:Patches:5:Find DGFX" config/config_8x70w.plist
+/usr/libexec/PlistBuddy -c "Set ACPI:DSDT:Patches:5:Replace GFX0" config/config_8x70w.plist
+/usr/libexec/PlistBuddy -c "Set ACPI:SSDT:Generate:PluginType true" config/config_8x70w.plist
+/usr/libexec/PlistBuddy -c "Set KernelAndKextPatches:KernelXCPM true" config/config_8x70w.plist
+/usr/libexec/PlistBuddy -c "Set SMBIOS:ProductName MacBookPro9,1" config/config_8x70w.plist
+printf "\n"
 printf "!! creating config/config_2x70p.plist\n"
 cp config/config_6x70p.plist config/config_2x70p.plist
 printf "\n"
